@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="Style.css" />
+    <title>Detalhes do Produto</title>
+  </head>
+  <body>
+    <div class="container">
+      <a id="voltar" href="index.html"><span id="logo">ToyMania</span></a>
+
+      <div class="row">
+        <!-- Imagem do Produto -->
+        <div class="col-6">
+          <img
+            src="https://legobrasil.vtexassets.com/arquivos/ids/183507/76261-lego-marvel-batalha-final-do-homem-aranha--3-.jpg?v=638240935645930000"
+            class="img-fluid"
+            style="align-items: center; height: 25rem"
+            alt="LEGO® Marvel"
+          />
+        </div>
+
+        <!-- Informações do Produto -->
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col">
+              <h3>LEGO® Marvel</h3>
+              <p>
+                O conjunto LEGO® Marvel A Batalha Final do Homem-Aranha recria o duelo espetacular do filme Homem-Aranha: Sem Volta para Casa da Marvel Studios. Repleto de personagens icônicos e ação com lançamento de teias, esta celebração deslumbrante do Homem-Aranha irá cativar fãs maiores de 10 anos.
+              </p>
+              <div>
+                <div class="card border-light mb-3" style="max-width: 18rem">
+                  <div class="card-header">
+                    <h4>Detalhes do Produto</h4>
+                  </div>
+                  <div class="card-body">
+                    <table>
+                      <tr>
+                        <td><strong>Marca:</strong></td>
+                        <td>LEGO®</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Tema:</strong></td>
+                        <td>MARVEL</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Tipo:</strong></td>
+                        <td>Peças de contrução</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Material:</strong></td>
+                        <td>Plástico ABS</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p>
+                <strong style="font-size: xx-large; color: green" id="preco">
+                  R$ 959,99
+                  </strong>
+                <h5 style="font-size: small;  color: green">Em estoque agora</h5>
+              </p>
+              Quantidade:
+              <input
+                style="border-radius: 20%; width: 10%"
+                type="number"
+                name="numero"
+                id="numeroInput"
+                value="1"
+                oninput="atualizarPreco(this.value)"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <br />
+              <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#Videos">Videos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Fotos">Fotos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Comentarios">Comentários</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="videoContent" style="display: none">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/watch?v=FQsA08RXMf0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div id="fotoContent" style="display: none">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <div class="photo text-center">
+                <img
+                  src="https://legobrasil.vtexassets.com/arquivos/ids/183503/76261-lego-marvel-batalha-final-do-homem-aranha--4-.jpg?v=638240935157000000"
+                  alt="Foto 1"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="photo text-center">
+                <img
+                  src="https://legobrasil.vtexassets.com/arquivos/ids/183504/76261-lego-marvel-batalha-final-do-homem-aranha--5-.jpg?v=638240935243430000"
+                  alt="Foto 2"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="photo text-center">
+                <img
+                  src="https://legobrasil.vtexassets.com/arquivos/ids/183509/76261-lego-marvel-batalha-final-do-homem-aranha--1-.jpg?v=638240935863200000"
+                  alt="Foto 3"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="photo text-center">
+                <img
+                  src="https://legobrasil.vtexassets.com/arquivos/ids/183510/76261-lego-marvel-batalha-final-do-homem-aranha.jpg?v=638240935972700000"
+                  alt="Foto 4"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="photo text-center">
+                <img
+                  src="https://legobrasil.vtexassets.com/arquivos/ids/183506/76261-lego-marvel-batalha-final-do-homem-aranha--6-.jpg?v=638240935446570000"
+                  alt="Foto 5"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="photo text-center">
+                <img
+                  src="https://legobrasil.vtexassets.com/arquivos/ids/183507/76261-lego-marvel-batalha-final-do-homem-aranha--3-.jpg?v=638240935645930000"
+                  alt="Foto 6"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="comentarioContent" style="display: none">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="media mb-3">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/660/660611.png"
+                  class="mr-3 tm1"
+                  alt="Usuário"
+                />
+                <div class="media-body">
+                  <h5 class="mt-0">Andreia Alves</h5>
+                  Adorei esse Conjunto!
+                </div>
+              </div>
+              <div class="media mb-3">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/660/660611.png"
+                  class="mr-3 tm1"
+                  alt="Usuário"
+                />
+                <div class="media-body">
+                  <h5 class="mt-0">Hebert Pena</h5>
+                  Comprei este produto para minha filha que é fã da Marvel e do Homem Aranha, eu SUPER RECOMENDO!
+                </div>
+              </div>
+              <div class="media">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/149/149995.png"
+                  class="mr-3 tm1"
+                  alt="Usuário"
+                />
+                <div class="media-body">
+                  <h5 class="mt-0">Ingrid Fariaz</h5>
+                  Esta foi a minha primeira compra neste site, e fiquei
+                  impressionado com a rapidez da entrega e a qualidade da entrega.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="media mb-3">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/660/660611.png"
+                  class="mr-3 tm1"
+                  alt="Usuário"
+                />
+                <div class="media-body">
+                  <h5 class="mt-0">Rafael Leão</h5>
+                  Sou um grande fã dessa linha de LEGO, por ser muito fã da Marvel, e ter essa contrução dessa cena icônica, é absolutamente incrivel.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <script>
+      function validarNumero(input) {
+        if (input.value < 0) {
+          input.value = 0;
+        }
+      }
+      function atualizarPreco(quantidade) {
+        quantidade = parseInt(quantidade);
+
+        if (!isNaN(quantidade)) {
+          var preco = 199.99;
+
+          var novoPreco = preco * quantidade;
+
+          document.getElementById("preco").textContent =
+            "$" + novoPreco.toFixed(2);
+        }
+      }
+      const videoLink = document.querySelector(".nav-link[href='#Videos']");
+      const fotoLink = document.querySelector(".nav-link[href='#Fotos']");
+      const comentarioLink = document.querySelector(
+        ".nav-link[href='#Comentarios']"
+      );
+      const videoContent = document.getElementById("videoContent");
+      const fotoContent = document.getElementById("fotoContent");
+      const comentarioContent = document.getElementById("comentarioContent");
+
+      videoLink.addEventListener("click", () => {
+        videoContent.style.display = "block";
+        fotoContent.style.display = "none";
+        comentarioContent.style.display = "none";
+      });
+
+      fotoLink.addEventListener("click", () => {
+        videoContent.style.display = "none";
+        fotoContent.style.display = "block";
+        comentarioContent.style.display = "none";
+      });
+
+      comentarioLink.addEventListener("click", () => {
+        videoContent.style.display = "none";
+        fotoContent.style.display = "none";
+        comentarioContent.style.display = "block";
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
